@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #20232a;
+            color: #61dafb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #282c34;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #61dafb;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #21a1f1;
+        }
+
+        main hr {
+            border: 0;
+            background: #61dafb;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+            padding: 0 20px;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #282c34;
+            color: #61dafb;
+            border: 2px solid #61dafb;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .leftsection .btn:hover {
+            background: #3a3f47;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 50%;
+            margin: 20px 0;
+            border: 4px solid #61dafb;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .purple {
+            color: #61dafb;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: #61dafb;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            text-align: center;
+        }
+
+        .secondsection h1 {
+            margin-top: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .vertical {
+            width: 100%;
+            max-width: 300px;
+            background: #282c34;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .vertical img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .vertical-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc {
+            color: gray;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #282c34;
+            padding: 20px 0;
+            color: gray;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer>div {
+            margin: 20px;
+            min-width: 150px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin: 10px 0;
+        }
+
+        .footer-rights {
+            color: gray;
+            padding: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #61dafb;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #21a1f1;
+        }
+
+        @media (max-width: 768px) {
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .leftsection .btn {
+                font-size: 16px;
+            }
+
+            .rightsection img {
+                max-width: 300px;
+            }
+
+            .vertical {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mayur</div>
+            <ul>
+                <li><a href="https://in.linkedin.com/in/mayur-bharvad-adit8182">Home</a></li>
+                <li><a href="https://www.instagram.com/?hl=en">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span>Mayur</span>.<br>
+                I am a passionate<br>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="resume.pdf" class="btn" download>Download Resume</a>
+                    <a href="https://github.com/Mayur8182/Mayur8182" class="btn" target="_blank">GitHub Profile</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="Mayur's photo">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>learning this languges</h1>
+            <h2>I am a information technology student</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img src="htm.png" alt="HTML Developer">
+                    <div class="vertical-title">
+                        HTML Developer (2023-current)
+                    </div>
+                    <div class="vertical-desc">
+                        Worked on various front-end projects, developed responsive web designs, and optimized websites for performance and accessibility.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="nj.png" alt="Node.js Developer">
+                    <div class="vertical-title">
+                        web Developer (2023-current)
+                    </div>
+                    <div class="vertical-desc">
+                        Developed scalable backend services, integrated APIs, and ensured robust security measures for various applications.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="react.png" alt="React Developer">
+                    <div class="vertical-title">
+                        React Developer (2024-Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Building dynamic and high-performance user interfaces, collaborating with design teams to implement innovative solutions.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mayur's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Contact Me</li>
+                    <li>Blog</li>
+                    <li>Portfolio</li>
+                    <li>Testimonials</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>FAQ</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mayur-bharvad-adit8182" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; mayursportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["Web Developer.", "Freelancer.", "Designer."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
