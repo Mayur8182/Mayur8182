@@ -2,6 +2,7 @@
 -  I’m interested in ...Machine learning
 -  I’m currently learning ...web development
 -  Information Technology student
+- langunges konwn C , C++(OOP),HTML,CSS,JAVASCRPT
 -  ADIT'2027
 
 
