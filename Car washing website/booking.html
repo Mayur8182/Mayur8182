@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Your Car Wash</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Your Car Wash</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Booking Form</h2>
+            <form id="booking-form" action="process_booking.php" method="post">
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="car-details">Car Details:</label>
+                <textarea id="car-details" name="car-details" required></textarea>
+
+                <label for="date-time">Preferred Date & Time:</label>
+                <input type="datetime-local" id="date-time" name="date-time" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p><a href="index.html">Back to Home</a></p>
+            <p>Contact us at (123) 456-7890 or visit us at 123 Car Wash Lane</p>
+            <p>&copy; 2024 Your Car Wash. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

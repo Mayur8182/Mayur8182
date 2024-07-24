@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="heading">Login</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+
+        <form action="Login Main page">
+
+
+            <div class="text">
+                <input type="text" name="text" placeholder="Username">
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <div class="text">
+                <input type="password" name="passward" id="passward" placeholder="Passward">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="rememberforget">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forget Passward?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+		
+            <div class="register-link">
+                <p>Don't have an account?<a href="Register.htm"> Register</a></p>
+            </div>
+
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<footer>
+	<div class="container">
+		<p><a href="index.html"></a></p>
+		<p>Contact us at (123) 456-7890 or visit us at 123 Car Wash Lane</p>
+		<p>&copy; 2024 Your Car Wash. All rights reserved.</p>
+	</div>
+</footer>
+</body>
+
+</html>
