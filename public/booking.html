@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <script>
+        async function handleBooking(event) {
+            event.preventDefault();
+
+            const user_id = document.getElementById('user_id').value;
+            const check_in = document.getElementById('check_in').value;
+            const check_out = document.getElementById('check_out').value;
+            const room_type = document.getElementById('room_type').value;
+
+            try {
+                const response = await fetch('/booking', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ user_id, check_in, check_out, room_type }),
+                });
+
+                const result = await response.text();
+                alert(result);
+
+                // Check if the response contains 'Booking successful!'
+                if (result === 'Booking successful!') {
+                    window.location.href = 'index.html'; // Redirect to index.html
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during booking.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Booking</h2>
+        <form onsubmit="handleBooking(event)">
+            <label for="user_id">User ID:</label>
+            <input type="text" id="user_id" name="user_id" required>
+
+            <label for="check_in">Check-in Date:</label>
+            <input type="date" id="check_in" name="check_in" required>
+
+            <label for="check_out">Check-out Date:</label>
+            <input type="date" id="check_out" name="check_out" required>
+
+            <label for="room_type">Room Type:</label>
+            <input type="text" id="room_type" name="room_type" required>
+
+            <button type="submit">Book</button>
+        </form>
+    </div>
+</body>
+</html>
