@@ -1,5 +1,5 @@
 # 💫 About Me:
-- 👋 Hi, I’m @Mayur8182<br>-  I’m interested in ...Machine learning<br>-  I’m currently learning ...web development<br>-  Information Technology student<br>- langunges konwn C , C++(OOP),HTML,CSS,JAVASCRPT<br>-  ADIT'2027<br>
+- 👋 Hi, I’m @Mayur8182<br>-  I’m interested in ...Machine learning<br>-  I’m currently learning ...web development<br>-  Information Technology student<br>- langunges konwn C , C++(OOP),HTML,CSS,JAVASCRPT,Node.js,Aws,Docker,Kubernets,Terrfrom,Git/Github,GithubActions,Python,Rest Api's,Nginx,Express.js,React.js,TypeScript<br>-  ADIT'2027<br>
 
 
 ## 🌐 Socials:
